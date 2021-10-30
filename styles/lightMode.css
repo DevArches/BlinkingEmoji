@@ -1,0 +1,58 @@
+.lightMode #pink {
+  color: rgb(211, 74, 193);
+}
+.lightMode #purple {
+  color: rgb(109, 3, 196);
+}
+.lightMode #yellow {
+  color: rgb(219, 143, 0);
+}
+.lightMode #green {
+  color: rgb(11, 117, 1);
+}
+.lightMode #blue {
+  color: rgb(0, 98, 163);
+}
+.lightMode hr {
+  color: black;
+}
+.lightMode {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 35%, rgba(255,255,255,1) 100%);
+  color: black;
+  text-shadow: 1px 1px 2px #727272;
+  
+}
+.lightMode h1 {
+    text-shadow: 1px 1px 2px #727272;
+}
+
+.lightMode a {
+  color: rgb(71, 71, 71);
+}
+
+.lightMode #sun {
+  color: rgb(71, 71, 71);
+}
+
+.lightMode h3 {
+  color: #b14c4c;
+  text-shadow: 0px 0px 0px #727272;
+}
+.lightMode #form {
+  background-color: white;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+.lightMode #textArea,
+.lightMode #email,
+.lightMode #contactSubmit {
+  background-color: white;
+  color: black;
+  border: 2px solid #969696;
+}
+.lightMode .about {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 70%, rgba(255,255,255,1) 100%);
+    text-shadow: 1px 1px 2px #727272;
+}

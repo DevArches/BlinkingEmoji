@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&family=Roboto+Mono:wght@100;400&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=VT323&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Electrolize', sans-serif;
+}
+body {
+  margin: 0;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,4,50,1) 35%, rgba(56,6,85,1) 100%);
+  color: white;
+
+}
+
+
+h1 {
+  font-size: 2.5rem;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+#hr1 {
+  margin: 0;
+  margin-top: 1rem;
+}
+#hr2 {
+  margin: 0;
+}
+
+
+h4 {
+  display: inline;
+}
+
+#li {
+  display: inline;
+}
+
+.list {
+  margin-left: 4rem;
+}
+.thankyou {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/*<------------------------typing--------------->*/
+
+.typingText {
+  
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+  padding-top: 25rem;
+  padding-bottom: 30rem;
+}
+
+.intro {
+  display: flex;
+  z-index: 1;
+  background-color: transparent;
+  font-size: 1rem;
+}
+
+.hello {
+  
+  position: relative;
+  filter: blur(0px);
+}
+.typing {
+  position: relative;
+  filter: blur(0px);
+}
+.typing::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  border-right: 2px solid white;
+  right: -8px;
+  animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*<------------------------nav--------------->*/
+
+.topnav {
+  background-color: transparent;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  z-index: 999;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a {
+  color: #f2f2f2;
+}
+a:hover {
+  color: #696969;
+}
+#sun:hover {
+  color: #696969;
+}
+#sun {
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 12px 18px;
+  float: right;
+}
+.links {
+  font-size: 2.5em;
+  color: rgb(211, 211, 211);
+  background-color: transparent;
+}
+
+/*<------------------------background texts--------------->*/
+.tab1 {
+  position: relative;
+  left: 20px;
+}
+.tab2 {
+  position: relative;
+  left: 40px;
+}
+
+.function {
+  font-size: 1.7rem;
+}
+.vars {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.code {
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+}
+
+h3 {
+  background-color: transparent;
+  margin: 0;
+  font-family: 'East Sea Dokdo', cursive;
+  font-size: 1.6rem;
+  color: #be661e;
+  text-shadow: 0 0 1px #FF0000, 0 0 2px #0000FF;
+}
+.colorText {
+  background-color: transparent;
+  font-family: 'East Sea Dokdo', cursive;
+}
+#purple {
+  color:rgb(144, 31, 209)
+}
+#red {
+  color:rgb(199, 71, 33)
+}
+#yellow {
+  color:rgb(175, 102, 6)
+}
+#green {
+  color:rgb(16, 106, 134)
+}
+#blue {
+  color:rgb(16, 106, 134)
+}
+
+
+/* <-------------------------scrollbar------------------->*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/*<------------------------responsive--------------->*/
+
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 6rem;
+  }
+  .code,
+  .vars,
+  .function,
+  h3 {
+    font-size: 0.8rem;
+  }
+  .links {
+    font-size: 2rem;
+  }
+  .typingText {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  h1 {
+    font-size: 1rem;
+  }
+  .code,
+  .vars,
+  .function,
+  h3 {
+    font-size: 1rem;
+  }
+  .typingText {
+    height: 50vh;
+  }
+}
